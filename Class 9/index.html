@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+<form action="Home.html" method="post">
+<fieldset> 
+<legend>Registeration Form</legend>
+<table>
+			<tr>
+            	<td><label>First Name</label></td>
+                <td><input type="text" placeholder="Firstname" name="fn"/></td>
+            </tr>
+            <tr>
+            	<td><label>Last Name</label></td>
+                <td><input type="text" placeholder="Lastname" name="ln"/></td>
+            </tr>
+            <tr>
+            		<td><label>Select Gender</label></td>
+                    <td>	<input type="radio" value="Male" name="gen"/><span>Male</span>
+                    		<input type="radio" value="Female" name="gen"/><span>Female</span>
+                    </td>
+            </tr>
+            <tr>
+            		<td><label>Select Country</label></td>
+            		<td>
+                    	<select name="country">
+                        		<optgroup label="Asian Country">
+                                    <option value="Bangladesh">Bangladesh</option>
+                                     <option value="India">India</option>
+                                    <option value="Pakistan">Pakistan</option> 
+                                    <option value="Srilanka">Srilanka</option>
+                                </optgroup>
+                                
+                                <optgroup label="Europian Country">
+                                    <option value="France">France</option>
+                                    <option value="Brazil">Brazil</option>
+                                </optgroup>
+                        </select>
+                    </td>
+            </tr>
+            <tr>
+            		<td><label>Select Game</label></td>
+            		<td>
+                    <input type="checkbox" name="hock" value="Hockey" /><span>Hockey</span>
+                    <input type="checkbox" name="cric" value="Cricket" /><span>Cricket</span>
+                    <input type="checkbox" name="ten" value="Tenis" /><span>Tenis</span>
+                    <input type="checkbox" name="foot" value="Football" /><span>Football</span>
+                    </td>
+            </tr>
+            <tr>
+           		 <td><label>Comments</label></td>
+                <td> <textarea rows="5" name="comment" cols="35" placeholder="Comments :))"></textarea></td>
+            
+            </tr>
+            <tr>
+            		 <td></td>
+                     <td><input type="submit" value="Account Create"/>
+                     	<input type="reset" value="Clear"/></td>
+            
+            </tr>
+
+
+</table>
+
+</fieldset>
+</form>
+
+
+</body>
+</html>

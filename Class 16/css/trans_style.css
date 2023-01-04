@@ -1,0 +1,21 @@
+
+
+.a
+{
+	width:100px;
+	height:100px;
+	background-color:#909;
+	/*--------------transition---*/
+	/*transition-property:width,height;
+	transition-duration:2s;
+	transition-delay:1s;
+	transition-timing-function:linear;*/
+	
+	transition:width  2s linear 1s,height 2s linear 1s,background-color  2s linear 1s;
+}
+.a:hover
+{
+	width:200px;
+	height:200px;
+	background-color:red;
+}

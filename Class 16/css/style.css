@@ -1,0 +1,45 @@
+
+.d1
+{
+	width:100px;
+	height:100px;
+	background-color:#F00;
+	/*transform:translate(150px,150px);*/
+}
+.d1:hover{
+	transform:translate(150px,150px);
+	}
+
+.d2
+{
+	width:100px;
+	height:100px;
+	background-color:#0FF;
+	/*transform:rotate(40deg);*/
+}
+.d2:hover{
+	transform:rotate(145deg);
+	}
+
+.d3
+{
+	width:100px;
+	height:100px;
+	background-color:#00C;
+	/*transform:scale(4,2);*/
+}
+.d3:hover{
+	transform:scale(4,2);;
+	}
+
+.d4
+{
+	width:100px;
+	height:100px;
+	background-color:#F33;
+	/*transform:skew(45deg,20deg);*/
+	margin:20px 0px 0px 150px;
+}
+.d4:hover{
+	transform:skew(45deg,20deg);
+	}

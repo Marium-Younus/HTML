@@ -1,0 +1,39 @@
+body
+{
+	background-color:rgba(51,51,51,0.8);
+}
+.slider
+{
+	width:70%;
+	height:550px;
+	background-image:url(../images/img-6.jpg);
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	background-size:100% 100%;
+	animation:myslider 9s linear infinite alternate;
+	box-shadow:1px 2px 6px 10px #FFFFFF;
+	
+}
+
+@keyframes myslider
+{
+	0%{background-image:url(../images/img-6.jpg);}
+	50%{background-image:url(../images/img-4.jpg);}
+	100%{background-image:url(../images/img-3.jpg);}
+	
+}
+.slider .slider_title{
+	width:100%;
+	height:60px;
+	background-color:rgba(51,51,51,0.7);
+	margin:230px 0px 0px 0px;
+	}
+h1
+{color:#FFF;
+font-family:Verdana, Geneva, sans-serif;
+text-align:center;
+padding:10px;
+	
+}

@@ -1,0 +1,38 @@
+h1
+{
+	color:#03C;
+	font-family:Verdana, Geneva, sans-serif;
+	font-style:italic;
+}
+
+p
+{
+	color:#666;
+	text-align:justify;
+	font-family:calibri;
+}
+p i b{color:#C30;font-family:algerian;}
+.img1{
+	width:500px;
+	/*margin-left:250px;
+	margin-top:20px;*/
+	margin:0px 0px 0px 450px;
+	
+	}
+
+.para1{
+	color:#900;
+	font-family:"Arial Black", Gadget, sans-serif;
+	}
+.para2{
+	color:#F06;
+	}
+	
+.image1
+{
+	
+	width:300px;
+	height:300px;
+	
+	}
+

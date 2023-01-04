@@ -1,0 +1,47 @@
+
+
+.d1
+{
+	width:100px;
+	height:100px;
+	background-color:#F00;
+	animation:mixcolor 5s linear 0s infinite alternate;
+		
+}
+@keyframes mixcolor
+{
+	0% {background-color:#F00;}
+	25%{background-color:blue;}
+	50%{background-color:green;}
+	75%{background-color:purple;}
+	100%{background-color:gray;}
+	
+}
+.d2
+{
+	width:100px;
+	height:100px;
+	background-color:#F00;
+	border-radius:180px;
+	position:relative;
+	animation:mixc_d 5s linear 0s infinite alternate;
+		
+}
+@keyframes mixc_d
+{
+	0% {background-color:#F00;left:0px;top:0px;}
+	25%{background-color:blue;left:300px;top:0px;}
+	50%{background-color:green;left:300px;top:300px;}
+	75%{background-color:purple;left:0px;top:300px;}
+	100%{background-color:gray;left:0px;top:0px;}
+	
+}
+.d3
+{width:300px;
+height:300px;
+background-color:#000;
+margin:300px;
+box-shadow:1px 2px 10px 15px #906;
+	
+	
+}

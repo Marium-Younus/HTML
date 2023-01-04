@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+var x=new Array("Audi","Corolla","Maruti");
+var audi=new Array("audi.jpg","Audi","2000$");
+var corol=new Array("cor.jpg","Bla bla","3000000000000000000000000$");
+function oncreate1(x)
+{
+	var car = document.getElementById("car1");
+	var option = document.createElement("option");
+	option.text = x;
+	option.value = x;
+	car.add(option,null);	
+}
+function loaddata1()
+{
+	for(var i=0;i<x.length;i++)
+	{
+		oncreate1(x[i]);
+	}
+}
+function generate_table1() {
+	// document.getElementById("table1").style.visibility = "visible";
+	var c_name = document.getElementById("car1").value;
+  	if(c_name == "Audi")
+  		{
+	  			document.getElementById("img1").src = audi[0];
+	  			document.getElementById("n1").innerHTML = audi[1];
+				document.getElementById("pri1").innerHTML = audi[2];
+	 	}
+ 	if(c_name == "Corolla")
+  		{
+	  			document.getElementById("img1").src = corol[0];
+	  			document.getElementById("n1").innerHTML = corol[1];
+				document.getElementById("pri1").innerHTML = corol[2];
+	 	}
+}
+
+//========================================================================
+function oncreate2(x)
+{
+	var car = document.getElementById("car2");
+	var option = document.createElement("option");
+	option.text = x;
+	option.value = x;
+	car.add(option,null);	
+}
+function loaddata2()
+{
+	for(var i=0;i<x.length;i++)
+	{
+		oncreate2(x[i]);
+	}
+}
+function generate_table2() {
+	 //document.getElementById("table2").style.visibility = "visible";
+	var c_name = document.getElementById("car2").value;
+
+  	if(c_name == "Audi")
+  		{
+	  			document.getElementById("img2").src = audi[0];
+	  			document.getElementById("n2").innerHTML = audi[1];
+				document.getElementById("pri2").innerHTML = audi[2];
+	 	}
+ 	if(c_name == "Corolla")
+  		{
+	  			document.getElementById("img2").src = corol[0];
+	  			document.getElementById("n2").innerHTML = corol[1];
+				document.getElementById("pri2").innerHTML = corol[2];
+	 	}
+}
+
+
+</script>
+</head>
+
+<body onload="loaddata1(),loaddata2()">
+<select id="car1" onchange="generate_table1()" ></select>
+<table id="table1" width="50%">
+<tr>
+<td>Image</td>
+<td ><img id="img1" width="250" height="200"/></td>
+</tr>
+<tr>
+<td>Name</td>
+<td id="n1"></td>
+<tr>
+<td>Price</td>
+<td id="pri1"></td>
+</tr>
+</tr>
+</table>
+<!--------------------------->
+<select id="car2" onchange="generate_table2()" ></select>
+<table id="table2" width="50%">
+<tr>
+<td>Image</td>
+<td ><img id="img2" width="250" height="200"/></td>
+</tr>
+<tr>
+<td>Name</td>
+<td id="n2"></td>
+<tr>
+<td>Price</td>
+<td id="pri2"></td>
+</tr>
+</tr>
+</table>
+
+</body>
+</html>
